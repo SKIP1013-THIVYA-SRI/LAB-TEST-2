@@ -1,0 +1,43 @@
+package week13;
+
+import java.util.Scanner;
+
+public class CyclinderComputation {
+
+	public static void main(String[] args) {
+
+		float radius;
+		float height;
+		double baseArea,surfaceArea,volume;
+		
+		Scanner scan = new Scanner(System.in);
+		System.out.print("Enter the radius : ");
+		radius = scan.nextFloat();
+		double radiusd = (double)radius;
+		
+		System.out.print("Enter the height : ");
+		height = scan.nextFloat();
+		double heightd = (double)height;
+				
+		baseArea = Math.PI * radiusd * radiusd;
+		surfaceArea = 2.0 * Math.PI * radiusd + 2.0 * baseArea;
+		volume = baseArea * heightd;
+
+		System.out.printf("The radius is "+ "%.2f",radiusd); 
+		System.out.println();
+		System.out.printf("The height is " + "%.2f",heightd);
+		System.out.println();
+		System.out.printf("The surface area is "+ "%.2f",surfaceArea );
+		System.out.println();
+		System.out.printf("The base area is " + "%.2f",baseArea); 
+		System.out.println();
+		System.out.printf("The volume is " + "%.2f",volume);
+
+			}
+
+		
+
+
+	}
+
+
