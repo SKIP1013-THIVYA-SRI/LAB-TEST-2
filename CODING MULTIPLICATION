@@ -1,0 +1,23 @@
+package week13;
+import java.util.Scanner;
+public class Multiplication {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int size;
+		Scanner scan = new Scanner(System.in);
+		System.out.print("Enter the size: ");
+		size = scan.nextInt();
+		
+		System.out.print("Multiplication table\n");
+		for(int i=1; i<=size; i++){ 
+		    for(int j=1; j<=size; j++){
+		     System.out.print(i*j+"\t");
+		            }
+		            System.out.println();
+
+		        }
+
+	}
+
+}
