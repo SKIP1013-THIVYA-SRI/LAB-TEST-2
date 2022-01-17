@@ -1,0 +1,38 @@
+package week13;
+import java.util.Scanner;
+import java.lang.*;  
+public class CircleComputation {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		float radius;
+		double diameter;
+		double area;
+		double circumference;
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Enter the radius of circle : ");
+		
+		radius = scan.nextFloat();
+		double radiusd = (double)radius;
+		
+		diameter = 2.0 * radiusd;
+		area = Math.PI * radiusd * radius;
+		circumference = 2.0 * Math.PI * radiusd;
+		
+		System.out.print("The radius is "); 
+		System.out.println(radiusd); 
+
+		System.out.print("The area is ");
+		System.out.printf("%.2f", area);
+		System.out.println();
+		System.out.print("The diameter is ");
+		System.out.printf("%.2f",diameter);
+		System.out.println();
+		System.out.print("The circumference is ");
+		System.out.printf("%.2f",circumference);
+
+	}
+
+}
